@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     }
     public void RestartGame()
     {
-        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
+        SceneManage.instance.RestartScene();
         Time.timeScale = 1f;
     }
 }
