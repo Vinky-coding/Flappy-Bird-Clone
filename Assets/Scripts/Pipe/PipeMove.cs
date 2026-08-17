@@ -4,7 +4,7 @@ using UnityEngine;
 public class PipeMove : MonoBehaviour
 {
     public float towardSpeed {get; private set;} = 2f;
-    private float disableX = -5f;
+    [SerializeField] private float disableX = -5f;
     // Update is called once per frame
     void Update()
     {

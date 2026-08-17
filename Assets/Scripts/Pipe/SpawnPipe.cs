@@ -15,7 +15,7 @@ public class SpawnPipe : MonoBehaviour
     {
         float randomY = Random.Range(bottomBound,topBound);
         Vector2 randPos = new Vector2(pipePrefab.transform.position.x, randomY);
-        transform.position = randPos;
+        transform.position = randPos; // Random spawn
         GameObject pipe = PoolManager.Instance.GetPool();
         if(pipe != null)
         {

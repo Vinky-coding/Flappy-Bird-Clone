@@ -15,6 +15,7 @@ public class SceneManage : MonoBehaviour
         }
     }
 
+    // Load scene by index
     public void LoadScene(int sceneIndex)
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(sceneIndex);

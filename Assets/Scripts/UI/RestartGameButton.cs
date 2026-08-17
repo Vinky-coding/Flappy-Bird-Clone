@@ -9,14 +9,5 @@ public class RestartGameButton : MonoBehaviour
     {
         scene = SceneManager.GetActiveScene();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-       OnClick();
-    }
-    void OnClick()
-    {
-        SceneManager.LoadScene(scene.name);
-    }
+    
 }

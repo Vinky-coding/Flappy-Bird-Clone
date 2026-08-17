@@ -18,9 +18,5 @@ public class ChangeScene : MonoBehaviour
     }
 
 
-    // hàm này được gọi khi người chơi nhấn nút "Exit" trong màn hình Game Over
-    public void OnButtonClick()
-    {
-        SceneManage.instance.LoadScene(0);
-    }
+    
 }

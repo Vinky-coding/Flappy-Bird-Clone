@@ -8,7 +8,7 @@ public class HitCollider : MonoBehaviour
         {
             Destroy(gameObject);
             AudioManager.PlaySound(AudioManager.SoundType.GetHit);
-            
+            ScoreManager.Instance.SaveHighScore();
             GameManager.Instance.GameOverScreen();
             Time.timeScale = 0f;
         }     

@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
             Instance = this;
         }
         else Destroy(gameObject);
+        gameOverScreen.SetActive(false);
     }
     void Start()
     {
@@ -22,6 +23,7 @@ public class GameManager : MonoBehaviour
         {
             gameOverScreen = GetComponent<GameObject>();
         }
+        
     }
     public void GameOverScreen() 
     {
